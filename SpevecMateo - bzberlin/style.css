@@ -1,0 +1,330 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 0;
+    margin: 0.0%;
+}
+
+#crveni{
+    background-color: red;
+    width: 100%;
+    height: 15px;
+}
+
+header{
+    margin-bottom: 2.5%;
+}
+
+#logo{
+    width: 3.7%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5%;
+}
+
+nav{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-right: 0px;
+    box-shadow: 0px 0px 0px 2px lightgray;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: slategray;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-right: 1px solid lightgray;
+}
+
+nav a:hover{
+    background-color: #f0efef;
+}
+
+main{
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+section{
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 0px 2px lightgray;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#prvaKategorija{
+    margin: 0 auto;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    padding: 7px 0px;
+}
+
+#drugaKategorija{
+    margin: 0 auto;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: 7px 0px;
+}
+
+#prvaKategorija a, #drugaKategorija a{
+    color: white;
+}
+
+.artikli {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.artikli article {
+    width: 32%;
+    padding: 2%;
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+article img{
+    width: 100%;
+}
+
+.artikli article img {
+    width: 100%;
+    height: 160px;
+    display: block;
+}
+
+article h2{
+    margin-top: 8px;
+}
+
+.artikli article {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.sportPodnaslov{
+    color: orange;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.kulturaPodnaslov{
+    color: red;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.clanak{
+    box-shadow: 0px 0px 0px 2px lightgray;
+    margin-bottom: 2%;
+    padding-top: 0.004%;
+    padding-bottom: 0.004%;
+}
+
+.clanak h1, h4, p{
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+
+footer{
+    width: 100%;
+    margin-top: 3%;
+    padding-top: 0;
+    border-right: 0px;
+    box-shadow: 0px 0.5px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: grey;
+    height: 200px;
+}
+
+#footerDiv{
+    background-color: white;
+    text-align: center;
+    width: 55%;
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    box-shadow: 0px 0px 0px 2px lightgray;
+}
+
+#footerDiv p {
+    margin: 0;
+    color: #333;
+}
+
+form {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.stavka {
+    margin-bottom: 20px;
+}
+
+.stavka label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.stavka .polje,
+.stavka .form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field-textual,
+.input-text,
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color: #b71414;
+}
+
+.stavka .polje #archive{
+    align-self: flex-start;
+    margin-top: 5px;
+    transform: scale(1.3);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.reg{
+    width: 55%;
+    padding: 2%;
+}
+
+@media (max-width: 1024px) {
+    main, #footerDiv {
+        width: 75%;
+    }
+
+    #logo {
+        width: 4%;
+    }
+
+    .artikli article {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+    }
+
+    nav a {
+        border-right: none;
+    }
+
+    .artikli {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artikli article {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    main, #footerDiv, .reg {
+        width: 90%;
+    }
+
+    #logo {
+        width: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav a {
+        padding: 12px 5px;
+        font-size: 12px;
+    }
+
+    #logo {
+        width: 7%;
+    }
+
+    button {
+        width: 55%;
+        margin: 5px 0;
+    }
+
+    .reg {
+        width: 90%;
+    }
+}
